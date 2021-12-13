@@ -3,6 +3,7 @@ Team: m22p1-weenies, [scrum_board](https://github.com/Archkitten/m22p1-weenies/p
 
 | Contributors            | Github ID       | Tasks  | Scrum Board | Commits | Profile |
 | :------------   |:--------------- | :----- | :---------- | :------ | :------ |
+| Yeonjoon Hong   | yeonjoonhong | [tasks]()  | [scrum_board]() | [commits]() | [profile](https://github.com/yeonjoonhong) |
 | Dhruv   | Dhrruvb1 | [tasks](https://github.com/Archkitten/m22p1-weenies/issues?q=assignee%3ADhrruvb1+is%3Aopen)  | [scrum_board](https://github.com/Archkitten/m22p1-weenies/projects/1?card_filter_query=assignee%3Adhrruvb1) | [commits](https://github.com/Archkitten/m22p1-weenies/commits?author=Dhrruvb1) | [profile](https://github.com/Dhrruvb1) |
 | Rohan Nallapati   |    macddmac   | [tasks](https://github.com/Archkitten/m22p1-weenies/issues?q=assignee%3Amacddmac+is%3Aopen) | [scrum_board](https://github.com/Archkitten/m22p1-weenies/projects/1?card_filter_query=assignee%3Amacddmac) | [commits](https://github.com/Archkitten/m22p1-weenies/commits?author=macddmac) | [profile](https://github.com/macddmac)|
 | Arch     | ArchKitten | [tasks](https://github.com/Archkitten/m22p1-weenies/issues?q=assignee%3AArchkitten+is%3Aopen)       | [scrum board](https://github.com/Archkitten/m22p1-weenies/projects/1?card_filter_query=assignee%3Aarchkitten) | [commits](https://github.com/Archkitten/m22p1-weenies/commits?author=Archkitten) | [profile](https://github.com/Archkitten) |
