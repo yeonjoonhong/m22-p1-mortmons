@@ -6,7 +6,6 @@ Team: m22p1-weenies, [scrum_board](https://github.com/Archkitten/m22p1-weenies/p
 | Yeonjoon Hong   | yeonjoonhong | [tasks]()  | [scrum_board]() | [commits]() | [profile](https://github.com/yeonjoonhong) |
 | Dhruv   | Dhrruvb1 | [tasks](https://github.com/Archkitten/m22p1-weenies/issues?q=assignee%3ADhrruvb1+is%3Aopen)  | [scrum_board](https://github.com/Archkitten/m22p1-weenies/projects/1?card_filter_query=assignee%3Adhrruvb1) | [commits](https://github.com/Archkitten/m22p1-weenies/commits?author=Dhrruvb1) | [profile](https://github.com/Dhrruvb1) |
 | Rohan Nallapati   |    macddmac   | [tasks](https://github.com/Archkitten/m22p1-weenies/issues?q=assignee%3Amacddmac+is%3Aopen) | [scrum_board](https://github.com/Archkitten/m22p1-weenies/projects/1?card_filter_query=assignee%3Amacddmac) | [commits](https://github.com/Archkitten/m22p1-weenies/commits?author=macddmac) | [profile](https://github.com/macddmac)|
-| Arch     | ArchKitten | [tasks](https://github.com/Archkitten/m22p1-weenies/issues?q=assignee%3AArchkitten+is%3Aopen)       | [scrum board](https://github.com/Archkitten/m22p1-weenies/projects/1?card_filter_query=assignee%3Aarchkitten) | [commits](https://github.com/Archkitten/m22p1-weenies/commits?author=Archkitten) | [profile](https://github.com/Archkitten) |
 | Samuel Mahjouri | iBraskyy      | [tasks](https://github.com/paul-bokelman/m221/issues?q=is%3Aopen+assignee%3AiBraskyy)       | [scrum board](https://github.com/paul-bokelman/m221/projects/1?card_filter_query=assignee%3AiBraskyy) | [commits](https://github.com/paul-bokelman/m221/commits?author=iBraskyy) | [profile](https://github.com/iBraskyy) |
 | Ryan Moghaddas     |  ryanmgds   | [tasks](https://github.com/Archkitten/m22p1-weenies/issues/assigned/ryanmgds)      | [scrum board](https://github.com/Archkitten/m22p1-weenies/projects/1) | [commits](https://github.com/Archkitten/m22p1-weenies/commits?author=ryanmgds) | [profile](https://github.com/ryanmgds) |
 
@@ -48,7 +47,7 @@ If you want to contribute, go over your ideas with us first by messaging us thro
 <summary>Ryan's Journals</summary>
 <br>
 
-[Ryan Moghaddes Journal](https://docs.google.com/document/d/1o6jel5V2YsOTTnGLbwFYh2T1PtHx-hJ2KlFS8i6V_qs/edit?usp=sharing)
+[Ryan Moghaddes Journal](https://docs.google.com/document/d/1j3QMC7svdLn_iCbPPmVI2BF0OptxyuLwDC4ISRmdEwo/edit?usp=sharing)
 
 </details>
 
