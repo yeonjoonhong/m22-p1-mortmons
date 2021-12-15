@@ -47,7 +47,7 @@ If you want to contribute, go over your ideas with us first by messaging us thro
 <summary>Ryan's Journals</summary>
 <br>
 
-[Ryan Moghaddes Journal](https://docs.google.com/document/d/1o6jel5V2YsOTTnGLbwFYh2T1PtHx-hJ2KlFS8i6V_qs/edit?usp=sharing)
+[Ryan Moghaddes Journal](https://docs.google.com/document/d/1j3QMC7svdLn_iCbPPmVI2BF0OptxyuLwDC4ISRmdEwo/edit?usp=sharing)
 
 </details>
 
