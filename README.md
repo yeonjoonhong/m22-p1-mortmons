@@ -1,3 +1,4 @@
+All Commits: (https://github.com/yeonjoonhong/m22-p1-mortmons/commits/main)
 
 Team: m22p1-weenies, [scrum_board](https://github.com/Archkitten/m22p1-weenies/projects/1), [contributors](https://github.com/Archkitten/m22p1-weenies/graphs/contributors), [Link to Site](http://76.88.115.31:8080/)
 
