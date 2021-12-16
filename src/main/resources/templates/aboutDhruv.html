@@ -72,6 +72,65 @@
 
 
     <div class="container p-3 my-3 bg-dark text-light rounded">
+        <h6><strong>(Unit 3 FRQ).
+        </strong></h6>
+        <h6><strong>(a) Write a code segment that prints "attending" if rsvp is true and prints "not attending" otherwise.
+        </strong></h6>
+        <h6 style="color:red">(boolean rsvp = true;
+            int selection;
+            String option1;
+            String option2;
+            if(rsvp == true){
+            System.out.println("attending");
+            }else{
+            System.out.println("not attending");
+            }
+            )</h6>
+        <h6><strong>(b)  Write a code segment that prints the food item associated with selection. For example, if the selection is 3, the code segment should print "pasta".
+            .
+        </strong></h6>
+        <h6 style="color:red">(if selection == 1{
+            System.out.print("beef")
+            }
+            if selection == 2{
+
+            System.out.print("chicken")
+            }
+            if selection ==3{
+
+            System.out.print("pasta")
+            }
+            Else {
+            System.out.print("fish")
+            }
+            )</h6>
+        <h6><strong>(c)  Write a code segment that will store a dinner selection in option1 based on the values of rsvp and selection. The intended behavior of the code segment is described below. If rsvp is true, the code segment should store in option1 a string indicating the person’s attendance and food choice. For example, if rsvp is true and selection is 1, the following string should be stored in option1. "Thanks for attending. You will be served beef." If rsvp is false, the following string should be stored in option1, regardless of the value of selection. "Sorry you can't make it." Write the code segment below. Your code segment should meet all specifications and conform to the examples.
+            .
+        </strong></h6>
+        <h6 style="color:red">(if (rsvp == true && selection = 1){
+
+            option1 = "Thanks for attending. You will be served beef.";
+
+            }
+
+            else{
+
+            option1 = "Sorry you can't make it.";
+
+            }
+            )</h6>
+        <h6><strong>(d)Write a code segment that will print true if the strings option1 and option2 contain the same values and will print false otherwise. Write the code segment below.
+        </strong></h6>
+        <h6 style="color:red">(
+            rsvp = false;
+
+            if (option1==(option2)){
+
+            rsvp = true; }
+
+            System.out.print(rsvp);
+            )</h6>
+
         <h6><strong>(a) Write a statement to create a LightSequence object gradShow that has the initial light sequence "0101 0101 0101".
             Write the statement below.</strong></h6>
         <h6>LightSequence gradShow = new;</h6>
