@@ -4,25 +4,25 @@ package com.nighthawk.csa;
 
 public class Light {
 
-    String sequences;
+    String seqs;
 
     public Light(String seqq) {
-        sequences = seqq;
+        seqs = seqq;
     }
 
     public String insertSegment(String segment, int id) {
         int x = id;
         String st=segment;
-        sequences = sequences.substring(0,x) + segment + sequences.substring(x, sequences.length());
-        return sequences;
+        seqs = seqs.substring(0,x) + segment + seqs.substring(x, seqs.length());
+        return seqs;
     }
 
     public void changeSequence(String seqq) {
-        sequences = seqq;
+        seqs = seqq;
     }
 
     public String display() {
-        return sequences;
+        return seqs;
     }
 
 }
