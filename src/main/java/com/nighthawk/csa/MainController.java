@@ -80,6 +80,16 @@ public class MainController {
         return "course/timelines";
     }
 
+    @GetMapping("/drawSquare")
+    public String getDrawSquare(){
+        return "drawSquare";
+    }
+
+    @GetMapping("/Collegeboard")
+    public String getCollegeboard(){
+        return "Collegeboard";
+    }
+
     @GetMapping("/course/tri1")
     public String courseTri1(Model model) {
         model.addAttribute("url", "https://padlet.com/jmortensen7/csa2022tri1");
