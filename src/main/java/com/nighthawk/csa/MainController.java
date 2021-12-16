@@ -102,4 +102,10 @@ public class MainController {
         return "course/timelines";
     }
 
+    @GetMapping("/CB FRQ")
+    public String scrumFRQ(Model model) {
+        model.addAttribute("url", "https://padlet.com/jmortensen7/csa2022tri2");
+        return "/CB FRQ's";
+    }
+
 }
