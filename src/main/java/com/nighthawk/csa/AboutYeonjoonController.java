@@ -6,15 +6,13 @@ Hopefully this code is easier to read!
 */
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class AboutArchController {
+public class AboutYeonjoonController {
 
-    @GetMapping("/aboutArch")
+    @GetMapping("aboutYeonjoon")
     public String aboutArch() {
-        return "aboutArch";
+        return "aboutYeonjoon";
     }
 }

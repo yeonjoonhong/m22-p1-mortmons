@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 :root{
-    --tyrian-purple: #501537;
-    --magenta: #922d50;
+    --backgroundColor: #9bddf5;
+    --buttonColor: #5ba6fc;
 }
 *{
     padding: 0;
@@ -10,12 +10,12 @@
     box-sizing: border-box;
 }
 html {
-    background: var(--tyrian-purple) !important;
+    background: var(--backgroundColor) !important;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    background: var(--tyrian-purple) !important;
+    background: var(--backgroundColor) !important;
     font-size: 1.2rem;
     color: rgba(0, 0, 0, 0.9);
 }
@@ -35,7 +35,7 @@ body {
     border: 3px;
 }
 .bmi-heads{
-    background: var(--magenta);
+    background: var(--buttonColor);
     color: #fff;
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ body {
     font-family: inherit;
     font-size: 1.15rem;
     border: none;
-    background: var(--magenta);
+    background: var(--buttonColor);
     color: #fff;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -114,7 +114,7 @@ body {
 .alert-error{
     text-align: center;
     padding: 1rem 1.6rem 0;
-    color: var(--magenta);
+    color: var(--buttonColor);
     display: none;
 }
 .bmi-output{
@@ -125,7 +125,7 @@ body {
     padding-bottom: 0.4rem;
 }
 #bmi-category{
-    color: var(--magenta);
+    color: var(--buttonColor);
 }
 #bmi-gender{
     text-transform: capitalize;
