@@ -22,8 +22,21 @@ If you want to contribute, go over your ideas with us first by messaging us thro
 
 
 [PBL Journal](https://docs.google.com/document/d/1j3QMC7svdLn_iCbPPmVI2BF0OptxyuLwDC4ISRmdEwo/edit?usp=sharing) - This is where the weekly plans and progress for our project are recorded.
+  
+<details>
+<summary>Yeonjoon's Journals</summary>
+<br>
+
+[Yeonjoon's Individual Journal](https://docs.google.com/document/d/1em_jarWLRf7CYE-5v51hX0MLGqWXDoDfaWKtYXLEFfI/edit?usp=sharing)
+  
+</details>
 
 <details>
+<summary>Dhruv's Journals</summary>
+<br>
+  
+<details>
+  
 <summary>Samuel's Journals</summary>
 <br>
 
@@ -51,17 +64,6 @@ If you want to contribute, go over your ideas with us first by messaging us thro
 
 </details>
 
-<details>
-<summary>Arch's Journals</summary>
-<br>
-
-[Arch's Individual Journal](https://docs.google.com/document/d/1em_jarWLRf7CYE-5v51hX0MLGqWXDoDfaWKtYXLEFfI/edit?usp=sharing)
-  
-</details>
-
-<details>
-<summary>Dhruv's Journals</summary>
-<br>
  
 [Dhruv's Journal](https://docs.google.com/document/d/1ksJgk9JwqnMBn6jBaRV9fp6efm7fFPq_iuUIKYfa53E/edit?usp=sharing)
   
