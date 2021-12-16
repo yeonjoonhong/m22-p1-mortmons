@@ -108,4 +108,10 @@ public class MainController {
         return "/CB FRQ's";
     }
 
+    @GetMapping("/BMI Calculator")
+    public String BMICalculator(Model model) {
+        model.addAttribute("url", "https://padlet.com/jmortensen7/csa2022tri2");
+        return "/bmiIndex";
+    }
+
 }
