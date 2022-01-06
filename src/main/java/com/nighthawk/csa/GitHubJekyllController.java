@@ -21,5 +21,8 @@ public class GitHubJekyllController {
 
     @GetMapping("/about")
     public String GitHubJekyllAbout() {return "GitHubAbout";}
+
+    @GetMapping("/corrections")
+    public String GitHubJekyllCorrections() {return "GitHubCorrections";}
 }
 
