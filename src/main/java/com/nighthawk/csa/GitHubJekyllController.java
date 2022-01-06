@@ -9,10 +9,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class AboutYeonjoonController {
+public class GitHubJekyllController {
 
-    @GetMapping("aboutYeonjoon")
-    public String aboutYeonjoon() {
-        return "aboutYeonjoon";
+    @GetMapping("/")
+    public String GitHubJekyll() {
+        return "GitHubJekyll";
     }
+
+    @GetMapping("/info")
+    public String GitHubJekyllInfo() {return "GitHubInfo";}
+
+    @GetMapping("/about")
+    public String GitHubJekyllAbout() {return "GitHubAbout";}
 }
+

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root{
+    --backgroundColor: #011015;
+    --buttonColor: #5ba6fc;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    background: var(--backgroundColor) !important;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    background: var(--backgroundColor) !important;
+    font-size: 1.2rem;
+    color: rgba(88,166,255, 0.8);
+}
+
+a:visited {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover { text-decoration: none; color:turquoise; }
+a:focus { text-decoration: none; color:orange; }
+
+.active { text-decoration: none; color:turquoise !important; }
+
+.container{
+    display: flex;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.main-wrapper{
+    max-width: 1080px;
+    background: #fff;
+    width: 480px;
+    height: 620px;
+    margin: auto;
+    position: absolute;
+    border: 3px;
+}
+.bmi-heads{
+    background: var(--buttonColor);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.bmi-heads .bmi-head{
+    padding: 1rem 1.6rem;
+    width: 100%;
+    cursor: pointer;
+}
+.active-head{
+    background: #000;
+}
+.bmi-content{
+    padding: 2rem;
+}
+.form-grp{
+    padding: 0.55rem 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+.form-grp-col{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    align-items: center;
+}
+.form-inp{
+    width: 100%;
+    font-size: 1.15rem;
+    font-family: inherit;
+    padding: 0.6rem 1.2rem;
+    margin: 0.2rem 0;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.form-inp:focus{
+    outline: 0;
+}
+.form-inp::placeholder{
+    text-align: right;
+    opacity: 0.6;
+}
+.btns{
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btns .button{
+    width: 140px;
+    margin: 0 0.5rem;
+    padding: 0.8rem 0;
+    font-family: inherit;
+    font-size: 1.15rem;
+    border: none;
+    background: var(--buttonColor);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    letter-spacing: 0.5px;
+}
+.btns .button:hover{
+    outline: 0;
+    opacity: 0.9;
+}
+.btns .button:focus{
+    outline: 0;
+}
+#bmi-usc, #bmi-si{
+    display: none;
+}
+/* js related */
+.show-bmi{
+    display: block!important;
+}
+.alert-error{
+    text-align: center;
+    padding: 1rem 1.6rem 0;
+    color: var(--buttonColor);
+    display: none;
+}
+.bmi-output{
+    padding: 1rem 1.6rem;
+    text-align: center;
+}
+#bmi-value{
+    padding-bottom: 0.4rem;
+}
+#bmi-category{
+    color: var(--buttonColor);
+}
+#bmi-gender{
+    text-transform: capitalize;
+}
+
+td {
+    padding-right: 10px;
+}
+
+th{
+    padding-right: 15px;
+}
