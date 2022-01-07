@@ -6,7 +6,7 @@ Team: m22p1-weenies, [scrum_board](https://github.com/Archkitten/m22p1-weenies/p
 | :------------   |:--------------- | :----- | :---------- | :------ | :------ |
 | Yeonjoon Hong   | yeonjoonhong | [tasks]()  | [scrum_board]() | [commits](https://github.com/yeonjoonhong/m22-p1-mortmons/commits?author=yeonjoonhong) | [profile](https://github.com/yeonjoonhong) |
 | Dhruv Bhatnagar  | Dhrruvb1 | [tasks]()  | [scrum_board]() | [commits]() | [profile]() |
-| Rohan Nallapati   |    macddmac   | [tasks]() | [scrum_board]() | [commits]() | [profile]()|
+| Rohan Nallapati   |    macddmac   | [tasks](https://github.com/yeonjoonhong/m22-p1-mortmons/issues?q=assignee%3Amacddmac+is%3Aopen) | [scrum_board](https://github.com/yeonjoonhong/m22-p1-mortmons/projects/1?card_filter_query=assignee%3Amacddmac) | [commits](https://github.com/yeonjoonhong/m22-p1-mortmons/commits?author=macddmac) | [profile](https://github.com/macddmac)|
 | Samuel Mahjouri | iBraskyy      | [tasks]() | [scrum board]() | [commits]() | [profile]() |
 | Ryan Moghaddas     |  ryanmgds   | [tasks]() | [scrum board]() | [commits]() | [profile]() |
 
@@ -32,9 +32,7 @@ If you want to contribute, go over your ideas with us first by messaging us thro
   
 </details>
 
-<details>
-<summary>Dhruv's Journals</summary>
-<br>
+
   
 <details>
   

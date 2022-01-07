@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class AboutYeonjoonController {
 
     @GetMapping("aboutYeonjoon")
-    public String aboutArch() {
+    public String aboutYeonjoon() {
         return "aboutYeonjoon";
     }
 }

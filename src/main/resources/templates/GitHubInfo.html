@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<head>
+    <title>Info</title>
+    <div layout:fragment="head" th:remove="tag">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link th:href="@{/css/ghjekyll.css}" rel="stylesheet" />
+        <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+        <!-- Setup theme-color -->
+        <!-- start theme color meta headers -->
+        <meta name="theme-color" content="#151515">
+        <meta name="msapplication-navbutton-color" content="#151515">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <style>
+            h1, h2, h3, h4, h5, h6, h7, th
+            {
+                font-weight: normal;
+            }
+        </style>
+
+        <style>@media print {#ghostery-tracker-tally {display:none !important}}</style>
+
+    </div>
+
+</head>
+
+<body>
+<div layout:fragment="body" th:remove="tag">
+    <header>
+
+        <div class="container">
+            <a id="a-title" href="/">
+                <h2>M22-P1 Mortmons</h2>
+            </a>
+
+            <h3 style="padding-left: 15px">Welcome to the M22 P1 Mortmons Website! Click around the navbar and look at our other pages. This homepage is a Github page that has direct links to different things such as our commits (for our repository), issues, timebox, Collegeboard corrections, etc.</h3>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="main_content">
+            <table>
+                <tbody><tr>
+                    <td> <a href = "https://github.com/yeonjoonhong/m22-p1-mortmons"> <img src="/images/github.png" alt="" height="60"> </a> </td>
+                    <td style="padding-left: 15px"><a href="/">Home</a></td>
+                    <td><a class="active" href="/info">Info</a></td>
+                    <td><a href="/about">About</a></td>
+                    <td><a href="/corrections">Corrections</a></td>
+                </tr>
+                </tbody></table>
+            <hr>
+
+            <h3 id="Info">Info</h3>
+
+            <h5>Mr. Mort the g.o.a.t.</h5>
+            <h5>Mr. Mort is Mormon</h5>
+            <h5>We are Mr. Mort's students</h5>
+            <h5>We are the Mortmons</h5>
+
+        </section>
+    </div>
+
+</div>
+</body>
+
+</html>
+</html>
