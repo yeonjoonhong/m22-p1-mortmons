@@ -114,7 +114,7 @@ public class MainController {
         return "/bmiIndex";
     }
 
-    @GetMapping("/Replit")
+    @GetMapping("/replit")
     public String Replit(Model model) {
         model.addAttribute("url", "https://padlet.com/jmortensen/csa2022tri2");
         return "/replitEmbed.html";
