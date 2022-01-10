@@ -22,11 +22,11 @@ body {
 
 a:visited {
     text-decoration: none;
-    color: orange;
+    color: whitesmoke;
 }
 
 a:hover { text-decoration: none; color:turquoise; }
-a:focus { text-decoration: none; color:orange; }
+a:focus { text-decoration: none; color:whitesmoke; }
 
 .active { text-decoration: none; color:turquoise !important; }
 
