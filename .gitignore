@@ -507,3 +507,5 @@ node_modules
 /node_modules/@popperjs/core/dist/esm/utils/within.js
 /node_modules/@popperjs/core/lib/utils/within.js
 /node_modules/@popperjs/core/lib/utils/within.js.flow
+/src/main/resources/static/scss/design.css
+/src/main/resources/static/scss/design.css.map
