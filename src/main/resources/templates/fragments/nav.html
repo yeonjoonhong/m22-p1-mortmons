@@ -2,6 +2,7 @@
 <!-- Bootstrap Navigation Code -->
 <th:block xmlns:th="http://www.w3.org/1999/xhtml" th:fragment="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
         <h2 style="color:white; width:auto; margin-right:10px">P1 Mortmons</h2>
         <link rel="shortcut icon" type="image/png" href="images/amongsus.png"/>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,19 +15,23 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        About Us
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/aboutYeonjoon">Yeonjoon</a>
-                        <a class="dropdown-item" href="/aboutDhruv">Dhruv</a>
-                        <a class="dropdown-item" href="/aboutRyan">Ryan</a>
-                        <a class="dropdown-item" href="/aboutSam">Sam</a>
-                        <a class="dropdown-item" href="/aboutRohan">Rohan</a>
-                    </div>
-                </li>
-                -->
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                AboutUs
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink0">
+                                <a class="dropdown-item" href="/aboutYeonjoon">Yeonjoon</a>
+                                <a class="dropdown-item" href="/aboutDhruv">Dhruv</a>
+                                <a class="dropdown-item" href="/aboutRyan">Ryan</a>
+                                <a class="dropdown-item" href="/aboutSam">Sam</a>
+                                <a class="dropdown-item" href="/aboutRohan">Rohan</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
                 <li class="nav-item active">
                     <a class="nav-link" href="/BMI Calculator">BMI Calculator<span class="sr-only">(current)</span></a>
                 </li>
