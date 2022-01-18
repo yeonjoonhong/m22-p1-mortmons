@@ -43,11 +43,11 @@ public class InvitationRyan {
 
     public String toString(String e)
     {
-        return "Yo "+e+", please come to my party at "+address+". Lets go "+hostName+ "!";
+        return "Yo "+e+", please come to my party at "+address+". My address is "+hostName+ "!";
     }
     public static void main(String[] args)
     {
-        InvitationRyan k = new InvitationRyan("Lebron","2323 Lebron Lane", "Clevland", 22);
+        InvitationRyan k = new InvitationRyan("Lebron","2323 James Lane", "Clevland", 22);
         k.setAddress("2323 Lebron Lane");
         String s=k.toString("Lebron");
         System.out.println(s);
