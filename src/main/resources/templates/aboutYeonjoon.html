@@ -7,7 +7,7 @@
 <!-- <head> -->
 <div layout:fragment="head" th:remove="tag">
     <!-- Page specific head additions -->
-    <title>About Yeonjoon</title>
+        <title>About Yeonjoon</title>
     <script>
         function Mask1(){
             document.getElementById('myImage').src="/images/yeonjoon.jpg";
@@ -93,8 +93,396 @@
         <h6>1f) double c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));</h6>
     </div>
 
-    <h4>Google Translate API</h4>
-    <div id="languageId"></div>
+    <div class="container p-3 my-3 bg-dark text-light rounded">
+        <!-- FRQ #2 -->
+
+        <h1 class="text-center fw-bold" >Unit 2 FRQ</h1><br>
+
+        <div>
+            <!-- Unit 2 FRQ Demo -->
+            <form action="/aboutYeonjoon/Wk1Q1Pe" method="GET" id="Wk1Q1PeForm">
+                <div>
+                    <label for="oldSeqField">Give me list of your friends (spaces between each name)</label><br>
+                    <input class="form-control" name="oldSeq" id="oldSeqField"><br>
+                    <label for="segField">Who do you dislike?</label>
+                    <input class="form-control" name="segment" id="segField"><br>
+                    <button class="btn btn-light">Submit</button>
+                    <p th:text="'New list of friends: ' + ${newSeq}"></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="container p-3 my-3 bg-dark text-light rounded">
+        <!-- Unit 3 FRQ Question #2 -->
+
+        <h1 class="text-center fw-bold" >Unit 3 FRQ</h1><br>
+        <div class="container" style="text-align:center;">
+            <canvas id="canvas" width="512" height="384"></canvas>
+        </div>
+
+        <h1>X</h1>
+        <input value="0" id='X' type='number' />
+        <h1>Y</h1>
+        <input value="0" id="Y" type='number' />
+        <h1>size</h1>
+        <input value="4" id="size" type='number' />
+        <script>
+            // https://www.w3schools.com/graphics/canvas_intro.asp
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            const unit = 16; // unit block size
+            const inputx = document.getElementById("X");
+            const inputy = document.getElementById("Y");
+            const inputsize = document.getElementById("size");
+
+            let inputxV = 0;
+            let inputyV = 0;
+            let inputsizeV = 4;
+
+            clearScreen();
+
+            inputsize.onchange = function() {
+
+                inputsizeV = parseInt(inputsize.value);
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 5;
+                update();
+            };
+
+            inputx.onchange = function() {
+
+                inputxV = parseInt(inputx.value);
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 5;
+                update();
+            };
+
+            inputy.onchange = function() {
+
+                inputyV = parseInt(inputy.value);
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 5;
+                update();
+
+            };
+
+            function update() {
+                // checking box out of bounds
+                if ((inputxV + inputsizeV) > 16 || // Right
+                    (inputxV) < -16 || // left
+                    (inputyV + inputsizeV) > 12 || // Top
+                    (inputyV) < -12) { // Bottom
+                    alert("Nothing changed -> Box is can't fit inside of the grid system");
+                    return;
+                }
+
+                clearScreen();
+                ctx.strokeStyle = 'black'
+                square();
+                grid();
+                axis();
+                logStats();
+            }
+
+            function logStats() {
+                console.log(
+                    `Area of the square: ${inputsizeV * inputsizeV}, side length of the square: ${(inputsizeV + inputsizeV) << 1}`
+                )
+            }
+
+
+            function clearScreen() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = 'white';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+            }
+
+
+            // grid based off of width, height
+            function grid() {
+                // color and pen width
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 1;
+                // make graph paper look
+                for (let col = 0; col < width; col += unit) {
+                    for (let row = 0; row < height; row += unit) {
+                        ctx.strokeRect(col, row, unit, unit);
+                    }
+                }
+            }
+
+            // axis lines
+            function axis() {
+                // color and pen width
+                ctx.strokeStyle = 'red';
+                ctx.lineWidth = 3;
+
+                // x & y zero midpoints of grid
+                const x0 = width * .5;
+                const y0 = height * .5;
+                // x-axis
+                ctx.moveTo(0, y0);
+                ctx.lineTo(width, y0);
+                ctx.stroke();
+                // y-axis
+                ctx.moveTo(x0, 0);
+                ctx.lineTo(x0, height);
+                ctx.stroke();
+            }
+
+
+
+            // square using lines
+            function square() {
+                ctx.strokeStyle = 'red';
+                ctx.lineWidth = 5;
+
+                // starting coordinates
+                var offsetX = width * 0.5;
+                var offsetY = height * 0.5;
+
+                // length of sides is 4 units
+                const l = Math.abs(unit * inputsizeV);
+
+                const x = unit + offsetX + inputxV * unit - unit;
+                const y = -unit + offsetY - l - inputyV * unit + unit;
+
+                // draw a square
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(x, y + l);
+                ctx.lineTo(x + l, y + l);
+                ctx.lineTo(x + l, y);
+                ctx.lineTo(x, y);
+                ctx.stroke();
+            }
+            // three actions
+            grid();
+            axis();
+            square();
+        </script>
+
+    </div>
+
+    <div class="container p-3 my-3 bg-dark text-light rounded">
+        <!-- FRQ #4 -->
+
+        <h1 class="text-center fw-bold" >Unit 4 FRQ</h1><br>
+
+        <div>
+            <!-- Unit 4 FRQ Demo -->
+            <h5>Longest String Sequence</h5>
+            <div class="frq-form">
+                <form action="/aboutYeonjoon/Unit4FRQQuestion1" method="GET" id="Unit4FRQQuestion1">
+                    <div>
+                        <label for="longestStreakField">Input the string</label><br>
+                        <input class="form-control sub-window" name="str" id="longestStreakField" th:value="${Unit4Q2Input}"><br>
+                        <button class="button">Submit</button>
+                        <p th:text="'Output: ' + ${Unit4Q2Output}"></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container p-3 my-3 bg-dark text-light rounded">
+
+        <h1 class="text-center fw-bold" >Unit 5 FRQ</h1><br>
+        <h5>Password Generator</h5>
+
+        <div>
+            <div class="frq-form">
+                <div style="display:inline-block;margin:10px;">
+                    <form id="Unit5Frq2Form_1">
+                        <div>
+                            <label for="">Length</label><br>
+                            <input name="len" class="form-control sub-window"><br>
+                            <button id="Unit5Frq2FormButton_1" class="button">Submit</button>
+                            <p id="Unit5FRQ2Output_1">&nbsp;</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="frq-form">
+
+                <div style="display:inline-block;margin:10px;">
+                    <form id="Unit5Frq2Form_2">
+                        <div>
+                            <label for="">Length</label><br>
+                            <input name="len" class="form-control sub-window"><br>
+                            <label for="">Prefix</label><br>
+                            <input name="prefix" class="form-control sub-window"><br>
+                            <button id="Unit5Frq2FormButton_2" class="button">Submit</button>
+                            <p id="Unit5FRQ2Output_2">&nbsp;</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="frq-form">
+                <div style="display:inline-block;margin:10px;">
+                    <form id="Unit5Frq2Form_3">
+                        <div>
+                            <p>Output Password Count</p>
+                            <button id="Unit5Frq2FormButton_3" class="button">Submit</button>
+                            <p id="Unit5FRQ2Output_3">&nbsp;</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                (function () {
+                    let form = document.getElementById('Unit5Frq2Form_1');
+                    let output = document.getElementById("Unit5FRQ2Output_1");
+                    form.addEventListener('submit', e => e.preventDefault());
+                    document.getElementById('Unit5Frq2FormButton_1').onclick = Unit5Frq2_1;
+                    async function Unit5Frq2_1() {
+                        let data = await (await fetch('/aboutYeonjoon/Unit5FRQQuestion2-1', {
+                            method: 'POST',
+                            body: new FormData(form)
+                        })).text();
+                        output.innerText = data;
+                    }
+                })();
+
+                (function () {
+                    let form = document.getElementById('Unit5Frq2Form_2');
+                    let output = document.getElementById("Unit5FRQ2Output_2");
+                    form.addEventListener('submit', e => e.preventDefault());
+                    document.getElementById('Unit5Frq2FormButton_2').onclick = Unit5Frq2_2;
+                    async function Unit5Frq2_2() {
+                        let data = await (await fetch('/aboutYeonjoon/Unit5FRQQuestion2-2', {
+                            method: 'POST',
+                            body: new FormData(form)
+                        })).text();
+                        output.innerText = data;
+                    }
+                })();
+
+                (function () {
+                    let form= document.getElementById('Unit5Frq2Form_3');
+                    let output = document.getElementById("Unit5FRQ2Output_3");
+                    form.addEventListener('submit', e => e.preventDefault());
+                    document.getElementById('Unit5Frq2FormButton_3').onclick = Unit5Frq2_3;
+                    async function Unit5Frq2_3() {
+                        let data = await (await fetch('/aboutYeonjoon/Unit5FRQQuestion2-3', {
+                            method: 'POST',
+                            body: new FormData(form)
+                        })).text();
+                        output.innerText = data;
+                    }
+                })();
+
+            </script>
+
+        </div>
+
+    </div>
+
+    <div class="container p-3 my-3 bg-dark text-light rounded">
+
+        <h1 class="text-center fw-bold" >Unit 6 FRQ</h1><br>
+
+        <div>
+            <div class="frq-form">
+                <form id="Unit6Frq1Form">
+                    <label for="">Input a comma-separated list of words</label>
+                    <label for="">Do not include any spaces</label>
+                    <label for="">All words must be 3 or more characters long</label>
+                    <label for="">Returns word ending in "ing"</label>
+                    <input name="words" class="form-control sub-window"><br>
+                    <button id="Unit6Frq1Button" class="button">Submit</button>
+                    <p id="Unit6Frq1Output">&nbsp;</p>
+                </form>
+            </div>
+            <script>
+                (function () {
+                    let form = document.getElementById('Unit6Frq1Form');
+                    let output = document.getElementById("Unit6Frq1Output");
+                    form.addEventListener('submit', e => e.preventDefault());
+                    document.getElementById('Unit6Frq1Button').onclick = post;
+                    async function post() {
+                        let data = await (await fetch('/aboutYeonjoon/Unit6Frq1', {
+                            method: 'POST',
+                            body: new FormData(form)
+                        })).text();
+                        output.innerText = data;
+                    }
+                })();
+            </script>
+        </div>
+
+        <div class="frq-form">
+            <form id="Unit6Frq2aForm">
+                <label for="">Input a comma-separated list of ints</label>
+                <label for="">Do not include any spaces</label>
+                <input name="items" class="form-control sub-window" id="Unit6Frq2aField"><br>
+                <button id="Unit6Frq2aButton" class="button">Submit</button>
+                <p id="Unit6Frq2aOutput">&nbsp;</p>
+            </form>
+        </div>
+        <script>
+            (function () {
+                let form = document.getElementById('Unit6Frq2aForm');
+                let output = document.getElementById("Unit6Frq2aOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit6Frq2aButton').onclick = post;
+                async function post() {
+                    document.getElementById("Unit6Frq2bField1").value = document.getElementById("Unit6Frq2aField").value;
+                    let data = await (await fetch('/aboutYeonjoon/Unit6Frq2a', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+        <div class="frq-form">
+            <form id="Unit6Frq2bForm">
+                <label for="">Input a comma-separated list of ints</label>
+                <label for="">Do not include any spaces</label>
+                <input name="items" class="form-control sub-window" id="Unit6Frq2bField1"><br>
+                <label for="">Fixed Wage</label>
+                <input name="fixedWage" class="form-control sub-window"><br>
+                <label for="">Per Item Wage</label>
+                <input name="perItemWage" class="form-control sub-window"><br>
+                <button id="Unit6Frq2bButton" class="button">Submit</button>
+                <p id="Unit6Frq2bOutput">&nbsp;</p>
+            </form>
+        </div>
+        <script>
+            (function () {
+                let form = document.getElementById('Unit6Frq2bForm');
+                let output = document.getElementById("Unit6Frq2bOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit6Frq2bButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit6Frq2b', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+    </div>
+
+
+
+    <!--<h4>Google Translate API</h4>
+    <div id="languageId"></div>-->
 
     </body>
     <!-- End of body content specific to page -->
