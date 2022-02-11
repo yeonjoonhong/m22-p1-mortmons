@@ -50,7 +50,7 @@
 
     <style>
         body {
-            background-image: url('https://i.redd.it/n9yf3an9hzq51.png');
+            background-image: url('https://preview.redd.it/sbp4cinuq8r51.png?width=960&crop=smart&auto=webp&s=07f5fdbd4b79aed0690d4c4c5e9371e2d3380cfe');
             background-repeat: repeat-x;
             background-attachment: fixed;
             background-size: cover;
@@ -84,19 +84,10 @@
                    width="160" height="160"></a>
     </div>
 
-    <div class="container p-3 my-3 bg-dark text-light rounded">
-        <h6>1a) LightSequence gradShow = new LightSequence("0101 0101 0101");</h6>
-        <h6>1b) gradShow.display();</h6>
-        <h6>1c) gradShow.changeSequence("0011 0011 0011");</h6>
-        <h6>1d) String resultSeq = gradShow.insertSegment("1111 1111", 4);</h6>
-        <h6>1e) String newSeq = oldSeq.replaceFirst(segment, "");</h6>
-        <h6>1f) double c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));</h6>
-    </div>
-
-    <div class="container p-3 my-3 bg-dark text-light rounded">
+    <div class="container p-3 my-3 bg-red text-light rounded">
         <!-- FRQ #2 -->
 
-        <h1 class="text-center fw-bold" >Unit 2 FRQ</h1><br>
+        <h1 class="text fw-bold" >Unit 2 FRQ</h1><br>
 
         <div>
             <!-- Unit 2 FRQ Demo -->
@@ -114,19 +105,19 @@
 
     </div>
 
-    <div class="container p-3 my-3 bg-dark text-light rounded">
+    <div class="container p-3 my-3 bg-red text-light rounded">
         <!-- Unit 3 FRQ Question #2 -->
 
-        <h1 class="text-center fw-bold" >Unit 3 FRQ</h1><br>
-        <div class="container" style="text-align:center;">
+        <h1 class="text fw-bold" >Unit 3 FRQ</h1><br>
+        <div class="container" style="text-align:left;">
             <canvas id="canvas" width="512" height="384"></canvas>
         </div>
 
-        <h1>X</h1>
+        <h5>X</h5>
         <input value="0" id='X' type='number' />
-        <h1>Y</h1>
+        <h5>Y</h5>
         <input value="0" id="Y" type='number' />
-        <h1>size</h1>
+        <h5>size</h5>
         <input value="4" id="size" type='number' />
         <script>
             // https://www.w3schools.com/graphics/canvas_intro.asp
@@ -268,10 +259,10 @@
 
     </div>
 
-    <div class="container p-3 my-3 bg-dark text-light rounded">
+    <div class="container p-3 my-3 bg-red text-light rounded">
         <!-- FRQ #4 -->
 
-        <h1 class="text-center fw-bold" >Unit 4 FRQ</h1><br>
+        <h1 class="text fw-bold" >Unit 4 FRQ</h1><br>
 
         <div>
             <!-- Unit 4 FRQ Demo -->
@@ -293,9 +284,9 @@
 
 
 
-    <div class="container p-3 my-3 bg-dark text-light rounded">
+    <div class="container p-3 my-3 bg-red text-light rounded">
 
-        <h1 class="text-center fw-bold" >Unit 5 FRQ</h1><br>
+        <h1 class="text fw-bold" >Unit 5 FRQ</h1><br>
         <h5>Password Generator</h5>
 
         <div>
@@ -389,9 +380,9 @@
 
     </div>
 
-    <div class="container p-3 my-3 bg-dark text-light rounded">
+    <div class="container p-3 my-3 bg-red text-light rounded">
 
-        <h1 class="text-center fw-bold" >Unit 6 FRQ</h1><br>
+        <h1 class="text fw-bold" >Unit 6 FRQ</h1><br>
 
         <div>
             <div class="frq-form">
@@ -476,9 +467,402 @@
                 }
             })();
         </script>
-
     </div>
 
+    <div class="container p-3 my-3 bg-red text-light rounded">
+
+        <h1 class="text fw-bold" >Unit 7 FRQ</h1><br>
+
+        <div class="frq-form">
+            <form id="Unit7Frq1aForm">
+                <label for="">First Name</label>
+                <input name="firstName" class="form-control sub-window"><br>
+                <label for="">Last Name</label>
+                <input name="lastName" class="form-control sub-window"><br>
+                <button id="Unit7Frq1aButton" class="button">Submit</button>
+                <p id="Unit7Frq1aOutput">&nbsp;</p>
+            </form>
+        </div>
+        <script>
+            (function () {
+                let form = document.getElementById('Unit7Frq1aForm');
+                let output = document.getElementById("Unit7Frq1aOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit7Frq1aButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit7Frq1a', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                    localStorage.setItem("Unit7Frq1a", data);
+                    console.log(data.split(", "));
+                }
+            })();
+        </script>
+
+        <div class="frq-form">
+            <form id="Unit7Frq1bForm">
+                <label for="">Used Names</label>
+                <input name="usedNames" class="form-control sub-window"><br>
+                <label for="">Possible Names</label>
+                <input name="possibleNames" class="form-control sub-window"><br>
+                <button id="Unit7Frq1bButton" class="button">Submit</button>
+                <p id="Unit7Frq1bOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit7Frq1bForm');
+                let output = document.getElementById("Unit7Frq1bOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit7Frq1bButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/about/akhilabout/Unit7Frq1b', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+    </div>
+
+    <div class="container p-3 my-3 bg-red text-light rounded">
+
+        <h1 class="text fw-bold" >Unit 8 FRQ</h1><br>
+
+        <div class="frq-form">
+            <form id="Unit8Frq1aForm">
+                <label for="">Create an array of Plot objects</label>
+                <label for="">Format: CropType,CropYield</label>
+                <div style="display:flex; margin-bottom:10px;">
+                    <input name="1" class="form-control sub-window" value="Sugar, 15">
+                    <input name="2" class="form-control sub-window" value="Potato, 5" style="margin:0px 10px 0px 10px;">
+                    <input name="3" class="form-control sub-window" value="Corn, 5">
+                </div>
+                <div style="display:flex; margin-bottom:10px;">
+                    <input name="4" class="form-control sub-window" value="Wheat, 5">
+                    <input name="5" class="form-control sub-window" value="Wheat, 7" style="margin:0px 10px 0px 10px;">
+                    <input name="6" class="form-control sub-window" value="Corn, 5">
+                </div>
+                <div style="display:flex; margin-bottom:10px;">
+                    <input name="7" class="form-control sub-window" value="Nether Wart, 5">
+                    <input name="8" class="form-control sub-window" value="Carrots, 3" style="margin:0px 10px 0px 10px;">
+                    <input name="9" class="form-control sub-window" value="Corn, 10">
+                </div>
+                <label for="">Input a CropType</label>
+                <input name="c" class="form-control sub-window"><br>
+                <button id="Unit8Frq1aButton" class="button">Submit</button>
+                <p id="Unit8Frq1aOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit8Frq1aForm');
+                let output = document.getElementById("Unit8Frq1aOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit8Frq1aButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit8Frq1a', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+        <div class="frq-form">
+            <form id="Unit8Frq1bForm">
+                <label for="">Create an array of Plot objects</label>
+                <label for="">Format: CropType,CropYield</label>
+                <div style="display:flex; margin-bottom:10px;">
+                    <input name="1" class="form-control sub-window" value="Sugar, 15">
+                    <input name="2" class="form-control sub-window" value="Potato, 5" style="margin:0px 10px 0px 10px;">
+                    <input name="3" class="form-control sub-window" value="Corn, 5">
+                </div>
+                <div style="display:flex; margin-bottom:10px;">
+                    <input name="4" class="form-control sub-window" value="Wheat, 5">
+                    <input name="5" class="form-control sub-window" value="Wheat, 7" style="margin:0px 10px 0px 10px;">
+                    <input name="6" class="form-control sub-window" value="Corn, 5">
+                </div>
+                <div style="display:flex; margin-bottom:10px;">
+                    <input name="7" class="form-control sub-window" value="Nether Wart, 5">
+                    <input name="8" class="form-control sub-window" value="Carrots, 3" style="margin:0px 10px 0px 10px;">
+                    <input name="9" class="form-control sub-window" value="Corn, 10">
+                </div>
+                <label for="">Input a column number</label>
+                <input name="col" type="number" min="0" max="2" id="num-select" class="form-control sub-window"><br>
+                <button id="Unit8Frq1bButton" class="button">Submit</button>
+                <p id="Unit8Frq1bOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit8Frq1bForm');
+                let output = document.getElementById("Unit8Frq1bOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit8Frq1bButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit8Frq1b', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+    </div>
+
+    <div class="container p-3 my-3 bg-red text-light rounded">
+
+        <h1 class="text fw-bold" >Unit 9 FRQ</h1><br>
+
+        <div class="frq-form">
+            <form id="Unit9Frq1aForm">
+                <label for="">Book Title</label>
+                <input name="title" class="form-control sub-window"><br>
+                <label for="">Author Name</label>
+                <input name="author" class="form-control sub-window"><br>
+                <label for="">Illustrator</label>
+                <input name="illustrator" class="form-control sub-window"><br>
+                <button id="Unit9Frq1aButton" class="button">Submit</button>
+                <p id="Unit9Frq1aOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit9Frq1aForm');
+                let output = document.getElementById("Unit9Frq1aOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit9Frq1aButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit9Frq1a', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+        <div class="frq-form">
+            <form id="Unit9Frq1bForm">
+                <div style="display:flex;">
+                    <div style="margin-right:10px">
+                        <label for="">Book1 Title</label>
+                        <input name="book1Title" class="form-control sub-window" value="Frankenstein"><br>
+                        <label for="">Book1 Author Name</label>
+                        <input name="book1Author" class="form-control sub-window" value="Mary Shelley"><br>
+                    </div>
+                    <div>
+                        <label for="">Book2 Title</label>
+                        <input name="book2Title" class="form-control sub-window" value="The Wonderful Wizard of Oz"><br>
+                        <label for="">Book2 Author Name</label>
+                        <input name="book2Author" class="form-control sub-window" value="L. Frank Baum"><br>
+                        <label for="">Book2Illustrator</label>
+                        <input name="book2Illustrator" class="form-control sub-window" value="W.W. Denslow"><br>
+                    </div>
+                </div>
+                <button id="Unit9Frq1bButton" class="button">Submit</button>
+                <p id="Unit9Frq1bOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit9Frq1bForm');
+                let output = document.getElementById("Unit9Frq1bOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit9Frq1bButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit9Frq1b', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+        <div class="frq-form">
+            <form id="Unit9Frq1cForm">
+                <label for="">Title</label>
+                <input name="title" class="form-control sub-window"><br>
+                <label for="">Author Name</label>
+                <input name="author" class="form-control sub-window"><br>
+                <label for="">Value</label>
+                <input name="value" class="form-control sub-window"><br>
+                <button id="Unit9Frq1cButton" class="button">Submit</button>
+                <p id="Unit9Frq1cOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit9Frq1cForm');
+                let output = document.getElementById("Unit9Frq1cOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit9Frq1cButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit9Frq1c', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+        <div class="frq-form">
+            <form id="Unit9Frq2aForm">
+                <label for="">Diet</label>
+                <input name="diet" class="form-control sub-window"><br>
+                <label for="">Species</label>
+                <input name="species" class="form-control sub-window"><br>
+                <label for="">Name</label>
+                <input name="name" class="form-control sub-window"><br>
+                <button id="Unit9Frq2aButton" class="button">Submit</button>
+                <p id="Unit9Frq2aOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit9Frq2aForm');
+                let output = document.getElementById("Unit9Frq2aOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit9Frq2aButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit9Frq2a', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+        <div class="frq-form">
+            <form id="Unit9Frq2bForm">
+                <label for="">Species</label>
+                <input name="species" class="form-control sub-window"><br>
+                <label for="">Name</label>
+                <input name="name" class="form-control sub-window"><br>
+                <button id="Unit9Frq2bButton" class="button">Submit</button>
+                <p id="Unit9Frq2bOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit9Frq2bForm');
+                let output = document.getElementById("Unit9Frq2bOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit9Frq2bButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit9Frq2b', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+        <div class="frq-form">
+            <form id="Unit9Frq2cForm">
+                <label for="">Name</label>
+                <input name="name" class="form-control sub-window"><br>
+                <label for="">Tusk Length (in meters)</label>
+                <input name="tuskLength" class="form-control sub-window"><br>
+                <button id="Unit9Frq2cButton" class="button">Submit</button>
+                <p id="Unit9Frq2cOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit9Frq2cForm');
+                let output = document.getElementById("Unit9Frq2cOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit9Frq2cButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit9Frq2c', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+    </div>
+
+    <div class="container p-3 my-3 bg-red text-light rounded">
+
+        <div class="frq-form">
+
+            <h1 class="text fw-bold" >Unit 10 FRQ</h1><br>
+
+            <form id="Unit10Frq1aForm">
+                <label for="">Integer 1</label>
+                <input name="a" type="number" class="form-control sub-window"><br>
+                <label for="">Integer 2</label>
+                <input name="b" type="number" class="form-control sub-window"><br>
+                <button id="Unit10Frq1aButton" class="button">Submit</button>
+                <p id="Unit10Frq1aOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit10Frq1aForm');
+                let output = document.getElementById("Unit10Frq1aOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit10Frq1aButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit10Frq1a', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+        <div class="frq-form">
+            <form id="Unit10Frq1bForm">
+                <label for="">Numerator</label>
+                <input name="numerator" type="number" class="form-control sub-window"><br>
+                <label for="">Denominator</label>
+                <input name="denominator" type="number" class="form-control sub-window"><br>
+                <button id="Unit10Frq1bButton" class="button">Submit</button>
+                <p id="Unit10Frq1bOutput">&nbsp;</p>
+            </form>
+        </div>
+
+        <script>
+            (function () {
+                let form = document.getElementById('Unit10Frq1bForm');
+                let output = document.getElementById("Unit10Frq1bOutput");
+                form.addEventListener('submit', e => e.preventDefault());
+                document.getElementById('Unit10Frq1bButton').onclick = post;
+                async function post() {
+                    let data = await (await fetch('/aboutYeonjoon/Unit10Frq1b', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })).text();
+                    output.innerText = data;
+                }
+            })();
+        </script>
+
+    </div>
 
 
     <!--<h4>Google Translate API</h4>
