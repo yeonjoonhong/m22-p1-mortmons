@@ -16,17 +16,17 @@ class FRQTHREE {
 
         int food = myObj.nextInt();
         if( food == 1 ){
-            System.out.println("Beef"); //outputs based on the input by the user
+            System.out.println("Beef"); //output based on the input by the user
         }
         if(food == 2 )
         {
-            System.out.println("chicken"); //outputs based on the input by the user
+            System.out.println("chicken"); //output based on the input by the user
         }
         if(food == 3 ){
-            System.out.println("pasta"); //outputs based on the input by the user
+            System.out.println("pasta"); //output based on the input by the user
         }
         if(food > 4){
-            System.out.println("fish"); //outputs based on the input by the user
+            System.out.println("fish"); //output based on the input by the user
         }
 
     }
