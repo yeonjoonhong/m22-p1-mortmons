@@ -12,21 +12,21 @@ class FRQTHREE {
         System.out.println("you are attending " + attending)
         ;  // Output user input
 
-        System.out.println("What food are you going to eat?  1 represents beef, 2 represents chicken, 3 represents pasta, and all other values represent");
+        System.out.println("What food are you going to eat?  1 represents beef, 2 represents chicken, 3 represents pasta, and all other values represent"); //read user input again
 
         int food = myObj.nextInt();
         if( food == 1 ){
-            System.out.println("Beef");
+            System.out.println("Beef"); //output based on the input by the user
         }
         if(food == 2 )
         {
-            System.out.println("chicken");
+            System.out.println("chicken"); //output based on the input by the user
         }
         if(food == 3 ){
-            System.out.println("pasta");
+            System.out.println("pasta"); //output based on the input by the user
         }
         if(food > 4){
-            System.out.println("fish");
+            System.out.println("fish"); //output based on the input by the user
         }
 
     }
