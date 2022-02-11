@@ -1,174 +1,182 @@
-<!DOCTYPE HTML>
-<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
-<html xmlns:layout="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.w3.org/1999/xhtml"
-      layout:decorate="~{layout}" lang="en">
-
-<!-- <head> -->
-<div layout:fragment="head" th:remove="tag">
-    <!-- Page specific head additions -->
-    <title>About Dhruv</title>
-    <script>
-        function Mask1(){
-            document.getElementById('myImage').src="/images/DhruvMask.jpeg"
-            document.getElementById('message')
-        }
-
-        function Mask2(){
-            document.getElementById('myImage').src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIuhfitL-9GsmcQXYCXX9jgTyrwtaCx3JZF-bEr4NiHij8hCQZbqVIHjsd9OQ2MgBTa24&usqp=CAU";
-            document.getElementById('message')
-        }
-    </script>
-    <script>
-        function openTest() {
-            document.getElementById("link").style.display = "block";
-            document.getElementById('message')
-        }
-    </script>
-</div>
-
-<!-- <body> -->
-<div layout:fragment="body" th:remove="tag">
-    <!-- Page specific body additions -->
-    <body>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            background-image: url('data:image/jpeg;base64,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');
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #9C0303;
+            padding: 10px;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
         }
     </style>
+</head>
+<body>
 
-    <div class=imageContainer>
-        <img  id="myImage"
-              src="/images/DhruvMask.jpeg" width="530" height="300"/>
-    </div>
-    <div class="button">
-        <button class="btn btn-info" onclick=Mask1();>
-            Original
-        </button>
-        <button  class="btn btn-info" onclick=Mask2();>
-            New Image
-        </button>
-    </div>
-
-    <br>
-
-    <div class="button">
-        <button class="btn btn-warning" onclick="openTest()">
-            My trimester 2 journal
-        </button>
-    </div>
-    <div id="spring_intro2" class="articles" style="margin: 16px;color: black;text-align:center;">
-        <h2><strong>Trimester 2 FRQs</strong></h2>
-    </div>
-    <div class="container p-3 my-3 bg-light text-primary">
-        <a href="lightscreen.html">Light Sequence FRQ (unit 2)</a>
-    </div>
-    <div id="link" style="display:none">
-        <a href="https://docs.google.com/document/d/1ksJgk9JwqnMBn6jBaRV9fp6efm7fFPq_iuUIKYfa53E/edit?usp=sharing">
-            <embed type="image/jpg" src="https://cdn4.vectorstock.com/i/1000x1000/59/38/click-here-button-vector-13425938.jpg"
-                   width="160" height="160"></a>
-    </div>
-
-
-    <div class="container p-3 my-3 bg-dark text-light rounded">
-        <h6><strong>(Unit 3 FRQ).
-        </strong></h6>
-        <h6><strong>(a) Write a code segment that prints "attending" if rsvp is true and prints "not attending" otherwise.
-        </strong></h6>
-        <h6 style="color:red">(boolean rsvp = true;
-            int selection;
-            String option1;
-            String option2;
-            if(rsvp == true){
-            System.out.println("attending");
-            }else{
-            System.out.println("not attending");
-            }
-            )</h6>
-        <h6><strong>(b)  Write a code segment that prints the food item associated with selection. For example, if the selection is 3, the code segment should print "pasta".
-            .
-        </strong></h6>
-        <h6 style="color:red">(if selection == 1{
-            System.out.print("beef")
-            }
-            if selection == 2{
-
-            System.out.print("chicken")
-            }
-            if selection ==3{
-
-            System.out.print("pasta")
-            }
-            Else {
-            System.out.print("fish")
-            }
-            )</h6>
-        <h6><strong>(c)  Write a code segment that will store a dinner selection in option1 based on the values of rsvp and selection. The intended behavior of the code segment is described below. If rsvp is true, the code segment should store in option1 a string indicating the person’s attendance and food choice. For example, if rsvp is true and selection is 1, the following string should be stored in option1. "Thanks for attending. You will be served beef." If rsvp is false, the following string should be stored in option1, regardless of the value of selection. "Sorry you can't make it." Write the code segment below. Your code segment should meet all specifications and conform to the examples.
-            .
-        </strong></h6>
-        <h6 style="color:red">(if (rsvp == true && selection = 1){
-
-            option1 = "Thanks for attending. You will be served beef.";
-
-            }
-
-            else{
-
-            option1 = "Sorry you can't make it.";
-
-            }
-            )</h6>
-        <h6><strong>(d)Write a code segment that will print true if the strings option1 and option2 contain the same values and will print false otherwise. Write the code segment below.
-        </strong></h6>
-        <h6 style="color:red">(
-            rsvp = false;
-
-            if (option1==(option2)){
-
-            rsvp = true; }
-
-            System.out.print(rsvp);
-            )</h6>
-
-        <h6><strong>(a) Write a statement to create a LightSequence object gradShow that has the initial light sequence "0101 0101 0101".
-            Write the statement below.</strong></h6>
-        <h6>LightSequence gradShow = new;</h6>
-        <h6 style="color:red">(This creates the object grad show)</h6>
-        <h6>LightSequence("0101 0101 0101");</h6>
-        <h6 style="color:red">(This statement insures that gradShow has a light sequence of 0101 0101 0101)</h6>
-
-        <h6><strong>(b) Write a statement that will call the display method to display the light sequence for the gradShow object.
-            Write the statement below.</strong></h6>
-        <h6>gradShow.display();</h6>
-        <h6 style="color:red">(This is the formula to write a method. We already wrote to create gradShow as an object, with the light sequence. Then, writing would display a method to display the light sequence.)</h6>
-
-        <h6><strong>(c) Write a statement that will be used to update the gradShow light sequence to "0011 0011 0011".
-            Write the statement below.</strong></h6>
-        <h6>gradShow.changeSequence("0011 0011 0011");</h6>
-        <h6 style="color:red"> (This changes the light sequence. It says change sequence, which does exactly what it implies. By putting the new sequence in the parentheses, it follows the syntax, which would update the light sequence)</h6>
-
-        <h6><strong>(d) Write a code segment that will call the insertSegment method to insert the segment "1111 1111" in the current sequence for gradShow at index 4. The resulting sequence will be stored in the string resultSeq. Write the code segment below.</strong></h6>
-        <h6>String resultSeq = gradShow.insertSegment("1111 1111", 4);</h6>
-        <h6 style="color:red">(Firstly, adding string resultSeq stores gradShow into the string resultSeq. Then,</h6>
-        <h6>gradShow.insertSegment(“1111 1111”4,);</h6>
-        <h6 style="color:red">changes the sequence, and the 4 makes it at index 4.</h6>
-
-        <h6><strong>(e) Assume that the string oldSeq has been properly declared and initialized and contains the string segment. Write a code segment that will remove the first occurrence of segment from oldSeq and store it in the string newSeq. Consider the following examples.</strong></h6>
-        <h6><strong>[Examples Omitted]</strong></h6>
-        <h6>int index = oldSeq.indexOf(segment);</h6>
-        <h6>String newSeq = oldSeq.substring(0, index) + oldSeq.substring(index + segment.length());</h6>
-        <h6 style="color:red">(this code meets all the expectations. Its removes the first occurrence from oldSeq and stores it into the newSeq)</h6>
-
-        <h6><strong>(f) Two lights will be arranged on a two-dimensional plane. The vertical distance between the two lights is stored in the double variable a. The horizontal distance between the two lights is stored in the double variable b.
-            The straight-line distance between the two lights is given by the formula .
-            Write a code segment that prints the straight-line distance between the two lights according to the formula above.</strong></h6>
-        <h6>System.out.println(Math.sqrt(aa + bb));</h6>
-        <h6 style="color:red">(Firstly, this prints out Math.sqrt(aa+bb). Secondly, math.sqrt ensures the square root. Aa squares a, and bb squares b. Then you add them together to get the pythagorean theorem.)</h6>
-
-    </div>
-
-    </body>
+<div class="about-section">
+    <h1>Dhruv Bhatnagar About US Page</h1>
 </div>
 
+<style>
+    body {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Og2pR0TCotCHHijQRmZoQpjzwDpj-aXacw&usqp=CAU');
+    }
+</style>
+<!DOCTYPE html>
+<html>
+<style>
+    table, th, td {
+        border:1px solid black;
+    }
+</style>
+<body>
+
+<h2>Country API</h2>
+
+<table style="width:100%">
+    <tr>
+        <th>Most Populated Countries</th>
+        <th>Least Populated Countries</th>
+        <th>Most Famous Countries</th>
+        <th>Least Famous Countries</th>
+
+    </tr>
+    <tr>
+        <td>China</td>
+        <td>Vatican City</td>
+        <td>France</td>
+        <td>Turkmenistan</td>
+
+    </tr>
+    <tr>
+        <td>India</td>
+        <td>Nauru</td>
+        <td>United states</td>
+        <td>Kiribati</td>
+
+    </tr>
+</table>
+
+
+
+
+<div class="center">
+    <p>I am Dhruv.I am a junior at Del Norte. Some of hobbies are hanging out with my friends and sleeping</p>
+    <button onclick="document.location='https://docs.google.com/document/d/1ksJgk9JwqnMBn6jBaRV9fp6efm7fFPq_iuUIKYfa53E/edit'">Trimester 2 Journal</button>
+    <button onclick="document.location='https://github.com/yeonjoonhong/m22-p1-mortmons'">Github Link</button>
+    <button onclick="document.location='https://gist.github.com/dhrruvb'">Github Gists(For FRQ)</button>
+    <button onclick="document.location='https://replit.com/@DhruvBhatnagar/Frq-3'">FRQ 3</button>
+
+    <a href="lightscreen.html">FRQ 2</a>
+    <a href="lightscreen.html">FRQ 4</a>
+    <a href="lightscreen.html">FRQ 5</a>
+    <a href="lightscreen.html">FRQ 6</a>
+    <a href="FRQTHREE.html.html">FRQ 7</a>
+    <a href="lightscreen.html">FRQ 8</a>
+    <a href="lightscreen.html">FRQ 9</a>
+    <a href="lightscreen.html">FRQ 10</a>
+
+
+
+</div>
+</div>
+<script>
+    function Mask2(){
+        document.getElementById('myImage').src="data:image/jpeg;base64,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";
+        document.getElementById('message')
+    }
+    function Mask1(){
+        document.getElementById('myImage').src="https://user-images.githubusercontent.com/86278850/150492970-43f7c32b-ffc8-4fe5-a439-e228c4b8cf70.JPG";
+        document.getElementById('message')
+    }
+</script>
+<div class=imageContainer>
+    <img  id="myImage"
+          src="https://user-images.githubusercontent.com/86278850/150492970-43f7c32b-ffc8-4fe5-a439-e228c4b8cf70.JPG" width="530" height="300"/>
+</div>
+<div class="button">
+    <button class="btn btn-info" onclick=Mask1();>
+        Original
+    </button>
+    <button  class="btn btn-info" onclick=Mask2();>
+        New Image
+    </button>
+</div>
+<div class="container">
+
+
+
+
+
+</body>
 </html>
