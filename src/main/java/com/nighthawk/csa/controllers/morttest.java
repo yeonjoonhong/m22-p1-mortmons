@@ -44,6 +44,6 @@ public static void main(String[] args)
 
         // Print a formatted message with number of Squirrels and Index by which they were created, use enhanced for loop
 
-        println("Squirrels" + this.number + "Day" + this.day)
+        System.out.println("Squirrels" + this.number + "Day" + this.day)
 
         }
