@@ -12,28 +12,31 @@ public class Squirrels(int a, int b) {
             // It initializes a random number between 3 and 36, ie the number of squirrels in class
 
         public getRandomnumber()
-            a = int[0,9]
-            b = int[3,36]
+            int a = this.a;
+            int b = this.b;
 
+            this.a = int[0,9];
+            this.b = int[3,36];
 
     }
 // constructor
 
-
-
-            // It contains a getter for the Random Number
-
-            randomnumber = this.randomnumber
-
-            // It contains a getter for Index, or the order it was initialized
-
-            this.i = ""
 }
 
 // Write a tester method
-public static void main(String[] args) {
+public static void main(String[] args)
+        {
+
+            ArraylistOG Squirrels = new Arraylist();
+            Squirrels.add("3")
+            Squirrels.add("7")
+            Squirrels.add("9")
+            Squirrels.add("4")
+            Squirrels.add("1")
+
 
         // Create an ArrayList of Type Number, my ArrayList is called squirrels
+
 
         // Initialize 10 squirrels of class type Number
 
