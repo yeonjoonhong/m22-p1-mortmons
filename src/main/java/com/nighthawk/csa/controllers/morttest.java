@@ -47,5 +47,3 @@ public static void main(String[] args)
         println("Squirrels" + this.number + "Day" + this.day)
 
         }
-
-        }
