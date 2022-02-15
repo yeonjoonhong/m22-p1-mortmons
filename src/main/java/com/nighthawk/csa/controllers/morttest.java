@@ -1,6 +1,6 @@
 package com.nighthawk.csa.starters.squirrel;
 import java.util.ArrayList;
-import java.util.Random
+import java.util.Random;
 
 
 // Write a Class Number
@@ -28,11 +28,11 @@ public static void main(String[] args)
         {
 
             ArraylistOG Squirrels = new Arraylist();
-            Squirrels.add("3")
-            Squirrels.add("7")
-            Squirrels.add("9")
-            Squirrels.add("4")
-            Squirrels.add("1")
+            Squirrels.add("3");
+            Squirrels.add("7");
+            Squirrels.add("9");
+            Squirrels.add("4");
+            Squirrels.add("1");
 
 
         // Create an ArrayList of Type Number, my ArrayList is called squirrels
@@ -44,6 +44,9 @@ public static void main(String[] args)
 
         // Print a formatted message with number of Squirrels and Index by which they were created, use enhanced for loop
 
-        System.out.println("Squirrels" + this.number + "Day" + this.day)
 
-        }
+        for(int i = 0; i < 5; i++)
+        getRandomnumber();
+        {System.out.println("Squirrels" + this.number + "Day" + this.day);}
+
+
