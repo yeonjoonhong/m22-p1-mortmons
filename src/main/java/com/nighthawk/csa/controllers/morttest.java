@@ -4,10 +4,10 @@ import java.util.Random
 
 
 // Write a Class Number
-public class NumberOfSquirrels(int a, String b) {
+public class Squirrels(int a, int b) {
     // instance variables
-    age = a;
-    breed = b;
+    daynumber = a;
+    numberofsquirrels = b;
 }
 
             // Number has a zero Argument constructor
