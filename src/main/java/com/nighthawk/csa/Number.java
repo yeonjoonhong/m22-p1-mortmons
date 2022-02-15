@@ -1,7 +1,7 @@
 package com.nighthawk.csa;
 import java.util.ArrayList;
 
-// Write a Class Number (done)
+// Write a Class Number
 public class Number {
     String squirrel = new String("Sq");
     String xnumber;
