@@ -8,13 +8,18 @@ public class Squirrels(int a, int b) {
     // instance variables
     daynumber = a;
     numberofsquirrels = b;
-}
-
             // Number has a zero Argument constructor
-
             // It initializes a random number between 3 and 36, ie the number of squirrels in class
 
-            // constructor
+        public getRandomnumber()
+            a = int[0,9]
+            b = int[3,36]
+
+
+    }
+// constructor
+
+
 
             // It contains a getter for the Random Number
 
@@ -23,6 +28,7 @@ public class Squirrels(int a, int b) {
             // It contains a getter for Index, or the order it was initialized
 
             this.i = ""
+}
 
 // Write a tester method
 public static void main(String[] args) {
