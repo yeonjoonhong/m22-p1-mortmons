@@ -1,17 +1,15 @@
 package com.nighthawk.csa.starters.squirrel;
-import java.util.ArrayList;
-import java.util.Random;
 
 
 // Write a Class Number
-public class Squirrels(int a, int b) {
+public class Squirrels<daynumber, numberofsquirrels>(int a, int b) {
     // instance variables
     daynumber = a;
     numberofsquirrels = b;
             // Number has a zero Argument constructor
             // It initializes a random number between 3 and 36, ie the number of squirrels in class
 
-        public getRandomnumber()
+        public void getRandomnumber()
             int a = this.a;
             int b = this.b;
 
@@ -45,7 +43,7 @@ public static void main(String[] args)
         // Print a formatted message with number of Squirrels and Index by which they were created, use enhanced for loop
 
 
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 9; i++)
         getRandomnumber();
         {System.out.println("Squirrels" + this.daynumber + "Day" + this.numberofsquirrels);}
 
