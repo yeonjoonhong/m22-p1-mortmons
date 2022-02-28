@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Main Data Table */
+        .mainTable{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #table{
+            margin: 5px auto;
+        }
+        table tr:not(:first-child){
+            cursor: pointer;
+            transition: all .25s ease-in-out;
+        }
+        table tr:not(:first-child):hover{
+            background-color: #02998D;
+        }
+
+        table{
+            width: 60%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        tr:nth-child(odd){
+            background-color: lightskyblue;
+        }
+
+        /*Data Update Button */
+        .updateBtn{
+            text-align: center;
+        }
+        .updateBtn button{
+            background-color: turquoise;
+            padding: 5px 10px;
+            border: 1px solid black;
+            color: white;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .updateBtn button:hover{
+            background: lightgray;
+            color: black;
+            transition: .5s;
+        }
+
+        /*Data Update Table*/
+        .editTable{
+            display: none;
+            padding-top: 20px;
+            width: 30%;
+            margin: 0 auto;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .editRowBtn{
+            background-color: #0DC143;
+            color: white;
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .editRowBtn:hover{
+            background-color: lightgray;
+            color: black;
+            transition: .5s;
+        }
+    </style>
+
+    <title>HTML Table With Edit Section</title>
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Main Data Table -->
+<div class="mainTable">
+    <h1>Myfitness Table</h1>
+    <table id="table" border="1">
+
+        <tr>
+            <th>Entry Number</th>
+            <th>Date</th>
+            <th>Weight</th>
+            <th>Net difference in weight</th>
+            <th>heaviest lift</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr> <tr>
+        <td>12</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>13</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>14</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>15</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>10</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>16</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>17</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>18</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>19</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>20</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>21</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>22</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>23</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>24</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>25</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>26</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>27</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>28</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>29</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr> <tr>
+        <td>30</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    </table>
+</div>
+
+
+<!-- Update Button -->
+<div class="updateBtn">
+    <button  onclick="editTableDisplay()">Update data</button>
+</div>
+
+<!-- Edit table -->
+<div class="editTable">
+    <div class="left">Date: </div><div class="right"><input type="text" name="date" id="date"></div><br><br>
+    <div class="left">Weight: </div><div class="right"><input type="text" name="weight" id="weight"></div><br><br>
+    <div class="left">Net Difference: </div><div class="right"><input type="text" name="netdiff" id="netdiff"></div><br><br>
+    <div class="left">Heaviest lift: </div><div class="right"><input type="text" name="hlift" id="hlift"></div><br><br>
+    <button onclick="editRow();" class="editRowBtn">Update</button><br><br>
+</div>
+
+<!-- link JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
+<script> // get selected row
+         // display selected row data in text input
+
+var table = document.getElementById("table"),rIndex;
+
+for(var i = 1; i < table.rows.length; i++){
+    table.rows[i].onclick = function(){
+        rIndex = this.rowIndex;
+        console.log(rIndex);
+
+        document.getElementById("date").value = this.cells[1].innerHTML;
+        document.getElementById("weight").value = this.cells[2].innerHTML;
+        document.getElementById("netdiff").value = this.cells[3].innerHTML;
+        document.getElementById("hlift").value = this.cells[4].innerHTML;
+    };
+}
+
+
+// edit the row
+function editRow(){
+    table.rows[rIndex].cells[1].innerHTML = document.getElementById("date").value;
+    table.rows[rIndex].cells[2].innerHTML = document.getElementById("weight").value;
+    table.rows[rIndex].cells[3].innerHTML = document.getElementById("netdiff").value;
+    table.rows[rIndex].cells[4].innerHTML = document.getElementById("hlift").value;
+}
+
+// Data Update Table Here
+function editTableDisplay(){
+    document.querySelector('.editTable').setAttribute('style', 'display: block;') }
+</script>
