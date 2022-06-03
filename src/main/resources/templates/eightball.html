@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<head><div layout:fragment="head" th:remove="tag">
+    <title>Magic Eight Ball</title>
+</div></head>
+
+<body><div layout:fragment="body" th:remove="tag">
+    <!-- Start of body content specific to page -->
+
+
+    <!-- Start of body content specific to page -->
+    <div id="spring_intro" class="articles" style="margin: 10px;">
+        <h1 style="text-align:center"> Eight Ball</h1>
+        <h1 style="text-align:center"> Ask and you shall divine an answer</h1>
+        <div style="text-align:center">
+            <form>
+                <label for="question">Ask a yes or no question:</label><br>
+                <input type="text" id="question" name="question" value=""><br>
+                <button onClick="window.location.reload();">Submit</button>
+            </form>
+        </div>
+        <div style="text-align:center">
+            <h2>Answer: <span th:text="${choice}">1</span></h2>
+        <div>
+
+    </div>
+    <!-- End of body content specific to page -->
+
+    <!-- End of body content specific to page -->
+</div></body>
+
+</html>
