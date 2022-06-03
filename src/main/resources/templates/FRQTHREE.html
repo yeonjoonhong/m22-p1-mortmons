@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> JavaScript Playground </title>
+    <script type="text/javascript">
+        // This is a function which helps get user input, and turns it into a number no matter what is entered
+        const makeNum = str => isNaN(str) || str.trim() === "" ? 0 : +str;
+
+        function attend(Attending) {
+            Attending = makeNum(Attending); // convert to the number
+            return Attending >= 15 && Attending <= 1 ? "You have too many guests, please find a different venue" : "You are attending, please find a seat";
+        }
+        window.addEventListener("load",function() { // on the page
+            document.getElementById("venue").addEventListener("click",function() {
+                document.getElementById("res").textContent = attend(document.getElementById('grade').value);
+            })
+        });
+    </script>
+    <script type="text/javascript">
+        // This is a function which helps get user input, and turns it into a number no matter what is entered
+        const makeNum = str => isNaN(str) || str.trim() === "" ? 0 : +str;
+
+        function food(Foods) {
+            Foods = makeNum(Foods); // convert to the number
+            return Foods >= 15 && Foods <= 1 ? "You have too many guests, please find a different venue" : "You are attending, please find a seat";
+        }
+        window.addEventListener("load",function() { // on the page
+            document.getElementById("fooood").addEventListener("click",function() {
+                document.getElementById("ress").textContent = food(document.getElementById('foood').value);
+            })
+        });
+    </script>
+</head>
+
+<body>
+Please enter the amount of guests attending:
+<input type="text" id="grade">
+<input type="button" id="venue" value="find me a seat" />
+<span id="res"></span>
+</body>
+
+<body>
+Please enter the type of food you are going to have. 1 represents "beef", 2 represents "chicken", 3 represents "pasta", any other value is fish
+<input type="text" id="fooood">
+<input type="button" id="foood" value="enter my food" />
+<span id="ress"></span>
+</body>
+
+</html>

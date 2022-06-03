@@ -1,12 +1,12 @@
 package com.nighthawk.csa.controllers;
 // unit 5 FRQ
-public class InvitationRyan {
+public class squirrel {
     private static String hostName;
     private String address;
     private String city;
     private int age;
 
-    public InvitationRyan(String a, String b, String c, int d)
+    public squirrel(String a, String b, String c, int d)
     {
         hostName = b;
         address = a;
@@ -43,14 +43,15 @@ public class InvitationRyan {
 
     public String toString(String e)
     {
-        return "Yo "+e+", please come to my party at "+address+". My address is "+hostName+ "!";
+        return "Squirrels: 36 Day 1,    "+e+",    Squirrels: 19 Day: 8,     "+address+",    Squirrels: 32 Day: 4,     "+hostName+    "Squirrels: 40 ";
     }
     public static void main(String[] args)
     {
-        InvitationRyan k = new InvitationRyan("Lebron","2323 James Lane", "Clevland", 22);
-        k.setAddress("2323 Lebron Lane");
-        String s=k.toString("Lebron");
+        squirrel k = new squirrel("Day: 7","Day:6", "Day: 4", 22);
+        k.setAddress("Squirrels: 34 Day: 3");
+        String s=k.toString("Squirrels: 8 Day: 0");
         System.out.println(s);
     }
 
 }
+
